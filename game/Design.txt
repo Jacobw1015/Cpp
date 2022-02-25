@@ -1,0 +1,103 @@
+Design Ideas:
+ - What kind of game do I want to make? 
+
+# Game with Wizards (Element benders?)
+   # Different Elemental Wizards - will be able to combine 2 elements at a higher level
+      # Elements: Fire, Water, Earth, Air
+        # Elemental Advantages:
+           - Water beats Fire,
+           - Fire beats Air,
+           - Air beats Earth,
+           - Earth beats Water
+      # Sub Elements
+        - Metal: Fire + Earth
+        - Lightning: Fire + Air
+        - Lava : Fire + Water
+        - Ice: Water + Air
+        - Wood/Mud : Water + Earth
+        - Sand : Air + Earth 
+# Level up system - Max level 50; Unlocks 2nd element at level 15;
+    # When starting, player can select 1 of the 4 Elements [Fire, Water, Earth, Air];
+        # Starts at level 1; Exp to next level will be 200;
+        # Each level up will need 100 exp. I.E level 2 will need 300 and level 3 will need 400
+    # At level 25, Wizards will pick next element 1 of the 3 remaining Elements.
+      Will be able to mix Elements together to make Sub-Element Spells
+# Spells:
+    Type of spells?
+       - Damage: Deals damage to 1 enemy or multiple
+       - Buff/DeBuff: Buffs player or DeBuffs enemy
+       - Effect: Burns, Stuns, Freezes
+       - Heal Spells: Heals user
+       - Cover's Player in element:
+        - Fire Punches/Kicks, etc.
+Will have Mana and HP as well as Stats
+
+Starting Wizard will have:
+ 100 HP: Increase by 10 each levelup,
+ 50 Mana: Increase by 10 each levelup ,
+ Depending on Element type: All stats start at 1. Chosen Elements gets +5.
+Stats increase by 1 each level up. Chosen elements increase by 2.
+ The higher the stat, the spell is more effective
+   Fire Stat
+  Water Stat
+    Air Stat
+  Earth Stat
+ Attack Stat
+Defense Stat
+  Speed Stat
+
+Equipment and items
+    Items: 
+        Healing potions: Replenishes Health or Mana
+        Coins: In-game Currency
+    Equipment: 
+        Robes: Certain robes increase Health, Mana, and/or Elemental stats
+        Ring: increase Health, Mana, and/or Elemental stats
+        Weapons: Depending on weapon, different spells can be accessed. Damage and speed not dependent, for now.
+               - Barehands,
+               - Wand (1h),
+               - Staff (2h)
+Combat: Turn based, vs other elemental wizards/monsters
+
+Exp gain: 
+ Elemental Bonus: Most 20xp, based on primary element
+  If Fire
+    -> Air, bonus =  (10 X 0.5);
+    -> Water, bonus = (10 X 2);
+    -> Earth/Fire, bonus = (10 X 1);
+  If Air
+    -> Earth, bonus =  (10 X 0.5);
+    -> Fire, bonus = (10 X 2);
+    -> Water/Air, bonus = (10 X 1);
+  If Water
+    -> Fire, bonus =  (10 X 0.5);
+    -> Earth, bonus = (10 X 2);
+    -> Air/Water, bonus = (10 X 1);
+  If Earth
+    -> Water, bonus =  (10 X 0.5);
+    -> Air, bonus = (10 X 2);
+    -> Fire/Earth, bonus = (10 X 1);
+
+
+  # Wizards: 75 + (elemental bonus) xp,
+  # Elemental: 50 + (elemental bonus) xp
+Boss Bonus:
+ 2 X expGain
+
+4 Areas:
+ - Volcanoes
+ - Forest
+ - Mountain
+ - Lake/Rivers
+
+Guilds:
+ Name: Phylytor 
+  Element: Earth
+ Name: Heliacyra 
+  Element: Fire
+ Name: Murarly
+  Element: Water
+ Name: Estellia
+  Element: Air
+
+When choosing Element to start, you pick guild after. Any guild can be chosen. Once you pick you are there forever 
