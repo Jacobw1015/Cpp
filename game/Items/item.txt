@@ -1,0 +1,13 @@
+Item design:
+
+Items will have a name, type of item ( potion, weapon(wand || staff), robe, misc), value(Currency);
+
+Potion inheritents will have type of Potion( Health, Mana), amount to restore;
+
+Weapon: Will have Element type, amount of damage, Attack boost?
+  - Wand
+  - Staff
+
+Armour: Will have Element type, amount of defense/speed, stat boost?
+
+Misc: used to gain money.

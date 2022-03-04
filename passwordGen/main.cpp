@@ -13,8 +13,9 @@ int main(){
     char letters; 
 
     for(int i = 0; i< 15;i++){
+       letters = 'a'+ rand()%28;
         password += letters;
-        letters = 'a'+ rand()%26;
+        
     }
     cout<< password;
 };

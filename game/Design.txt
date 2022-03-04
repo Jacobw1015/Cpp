@@ -3,7 +3,7 @@ Design Ideas:
 
 # Game with Wizards (Element benders?)
    # Different Elemental Wizards - will be able to combine 2 elements at a higher level
-      # Elements: Fire, Water, Earth, Air
+      # E̶l̶e̶m̶e̶n̶t̶s̶:̶ F̶i̶r̶e̶,̶ W̶a̶t̶e̶r̶,̶ E̶a̶r̶t̶h̶,̶ A̶i̶r̶
         # Elemental Advantages:
            - Water beats Fire,
            - Fire beats Air,
@@ -28,23 +28,23 @@ Design Ideas:
        - Buff/DeBuff: Buffs player or DeBuffs enemy
        - Effect: Burns, Stuns, Freezes
        - Heal Spells: Heals user
-       - Cover's Player in element:
+       - Form's Player in element:
         - Fire Punches/Kicks, etc.
-Will have Mana and HP as well as Stats
+W̶i̶l̶l̶ h̶a̶v̶e̶ M̶a̶n̶a̶ a̶n̶d̶ H̶P̶ a̶s̶ w̶e̶l̶l̶ a̶s̶ S̶t̶a̶t̶s̶
 
 Starting Wizard will have:
  100 HP: Increase by 10 each levelup,
- 50 Mana: Increase by 10 each levelup ,
- Depending on Element type: All stats start at 1. Chosen Elements gets +5.
+ 100 Mana: Increase by 10 each levelup ,
+ D̶e̶p̶e̶n̶d̶i̶n̶g̶ o̶n̶ E̶l̶e̶m̶e̶n̶t̶ t̶y̶p̶e̶:̶ A̶l̶l̶ s̶t̶a̶t̶s̶ s̶t̶a̶r̶t̶ a̶t̶ 1̶.̶ C̶h̶o̶s̶e̶n̶ E̶l̶e̶m̶e̶n̶t̶s̶ g̶e̶t̶s̶ +̶5̶.̶
 Stats increase by 1 each level up. Chosen elements increase by 2.
  The higher the stat, the spell is more effective
-   Fire Stat
-  Water Stat
-    Air Stat
-  Earth Stat
- Attack Stat
-Defense Stat
-  Speed Stat
+   F̶i̶r̶e̶ S̶t̶a̶t̶
+  W̶a̶t̶e̶r̶ S̶t̶a̶t̶
+    A̶i̶r̶ S̶t̶a̶t̶
+  E̶a̶r̶t̶h̶ S̶t̶a̶t̶
+ A̶t̶t̶a̶c̶k̶ S̶t̶a̶t̶
+D̶e̶f̶e̶n̶s̶e̶ S̶t̶a̶t̶
+  S̶p̶e̶e̶d̶ S̶t̶a̶t̶
 
 Equipment and items
     Items: 
@@ -100,4 +100,5 @@ Guilds:
  Name: Estellia
   Element: Air
 
-When choosing Element to start, you pick guild after. Any guild can be chosen. Once you pick you are there forever 
+When choosing Element to start, you pick guild after. Any guild can be chosen. 
+Once you pick you are there forever 
