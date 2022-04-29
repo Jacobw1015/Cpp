@@ -17,9 +17,9 @@ Design Ideas:
         - Wood/Mud : Water + Earth
         - Sand : Air + Earth 
 # Level up system - Max level 50; Unlocks 2nd element at level 15;
-    # When starting, player can select 1 of the 4 Elements [Fire, Water, Earth, Air];
-        # Starts at level 1; Exp to next level will be 200;
-        # Each level up will need 100 exp. I.E level 2 will need 300 and level 3 will need 400
+    #̶ W̶h̶e̶n̶ s̶t̶a̶r̶t̶i̶n̶g̶,̶ p̶l̶a̶y̶e̶r̶ c̶a̶n̶ s̶e̶l̶e̶c̶t̶ 1̶ o̶f̶ t̶h̶e̶ 4̶ E̶l̶e̶m̶e̶n̶t̶s̶ [̶F̶i̶r̶e̶,̶ W̶a̶t̶e̶r̶,̶ E̶a̶r̶t̶h̶,̶ A̶i̶r̶]̶;̶
+        #̶ S̶t̶a̶r̶t̶s̶ a̶t̶ l̶e̶v̶e̶l̶ 1̶;̶ E̶x̶p̶ t̶o̶ n̶e̶x̶t̶ l̶e̶v̶e̶l̶ w̶i̶l̶l̶ b̶e̶ 2̶0̶0̶;̶
+        #̶ E̶a̶c̶h̶ l̶e̶v̶e̶l̶ u̶p̶ w̶i̶l̶l̶ n̶e̶e̶d̶ 1̶0̶0̶ e̶x̶p̶.̶ I̶.̶E̶ l̶e̶v̶e̶l̶ 2̶ w̶i̶l̶l̶ n̶e̶e̶d̶ 3̶0̶0̶ a̶n̶d̶ l̶e̶v̶e̶l̶ 3̶ w̶i̶l̶l̶ n̶e̶e̶d̶ 4̶0̶0̶
     # At level 25, Wizards will pick next element 1 of the 3 remaining Elements.
       Will be able to mix Elements together to make Sub-Element Spells
 # Spells:
@@ -29,14 +29,14 @@ Design Ideas:
        - Effect: Burns, Stuns, Freezes
        - Heal Spells: Heals user
        - Form's Player in element:
-        - Fire Punches/Kicks, etc.
+       - Fire Punches/Kicks, etc.
 W̶i̶l̶l̶ h̶a̶v̶e̶ M̶a̶n̶a̶ a̶n̶d̶ H̶P̶ a̶s̶ w̶e̶l̶l̶ a̶s̶ S̶t̶a̶t̶s̶
 
 Starting Wizard will have:
- 100 HP: Increase by 10 each levelup,
- 100 Mana: Increase by 10 each levelup ,
+ 1̶0̶0̶ H̶P̶:̶ I̶n̶c̶r̶e̶a̶s̶e̶ b̶y̶ 1̶0̶ e̶a̶c̶h̶ l̶e̶v̶e̶l̶u̶p̶,̶
+ 1̶0̶0̶ M̶a̶n̶a̶:̶ I̶n̶c̶r̶e̶a̶s̶e̶ b̶y̶ 1̶0̶ e̶a̶c̶h̶ l̶e̶v̶e̶l̶u̶p̶ ,
  D̶e̶p̶e̶n̶d̶i̶n̶g̶ o̶n̶ E̶l̶e̶m̶e̶n̶t̶ t̶y̶p̶e̶:̶ A̶l̶l̶ s̶t̶a̶t̶s̶ s̶t̶a̶r̶t̶ a̶t̶ 1̶.̶ C̶h̶o̶s̶e̶n̶ E̶l̶e̶m̶e̶n̶t̶s̶ g̶e̶t̶s̶ +̶5̶.̶
-Stats increase by 1 each level up. Chosen elements increase by 2.
+S̶t̶a̶t̶s̶ i̶n̶c̶r̶e̶a̶s̶e̶ b̶y̶ 1̶ e̶a̶c̶h̶ l̶e̶v̶e̶l̶ u̶p̶.̶ C̶h̶o̶s̶e̶n̶ e̶l̶e̶m̶e̶n̶t̶s̶ i̶n̶c̶r̶e̶a̶s̶e̶ b̶y̶ 2̶.̶
  The higher the stat, the spell is more effective
    F̶i̶r̶e̶ S̶t̶a̶t̶
   W̶a̶t̶e̶r̶ S̶t̶a̶t̶
@@ -48,15 +48,14 @@ D̶e̶f̶e̶n̶s̶e̶ S̶t̶a̶t̶
 
 Equipment and items
     Items: 
-        Healing potions: Replenishes Health or Mana
+        H̶e̶a̶l̶i̶n̶g̶ p̶o̶t̶i̶o̶n̶s̶:̶ R̶e̶p̶l̶e̶n̶i̶s̶h̶e̶s̶ H̶e̶a̶l̶t̶h̶ o̶r̶ M̶a̶n̶a̶
         Coins: In-game Currency
     Equipment: 
-        Robes: Certain robes increase Health, Mana, and/or Elemental stats
+        R̶o̶b̶e̶s̶:̶ C̶e̶r̶t̶a̶i̶n̶ r̶o̶b̶e̶s̶ i̶n̶c̶r̶e̶a̶s̶e̶ H̶e̶a̶l̶t̶h̶,̶ M̶a̶n̶a̶,̶ a̶n̶d̶/̶o̶r̶ E̶l̶e̶m̶e̶n̶t̶a̶l̶ s̶t̶a̶t̶s̶
         Ring: increase Health, Mana, and/or Elemental stats
-        Weapons: Depending on weapon, different spells can be accessed. Damage and speed not dependent, for now.
-               - Barehands,
-               - Wand (1h),
-               - Staff (2h)
+        W̶e̶a̶p̶o̶n̶s̶:̶
+               -̶ W̶a̶n̶d̶ (̶1̶h̶)̶,̶
+               -̶ S̶t̶a̶f̶f̶ (̶2̶h̶)̶
 Combat: Turn based, vs other elemental wizards/monsters
 
 Exp gain: 

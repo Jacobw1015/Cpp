@@ -1,28 +1,22 @@
 #pragma once
 #include <iostream>
-#include "Address.hpp"
+#include "Building.hpp"
 #include "Student.hpp"
 #include <vector>
 
 using std::string;
 
-class School{
+class School: public Building{
     private:
-    Address* address;
+   
     string SchoolName;
     std::vector<Student> Roster;
     
     public:
-    School(string name, Address* add){
-        this->SchoolName = name;
-        this->address = add;
-    }
+    School(string name, Address* add): Building(name,add){}
     // Getters
-    string getSchoolName(){return SchoolName; }
+ 
 
-    void getAddress(){
-        address->ListAddress();
-    }
 
     std::vector<Student> getRoster(){
         return Roster;
@@ -35,7 +29,7 @@ class School{
         }
     }
    void addStudent(Student student){
-       std::cout << this->getSchoolName()<< " Added: " << student.Name <<"\n";
+        this->getName();std::cout << " Enrolled: " << student.Name <<"\n";
     Roster.emplace_back(student);
     
    }

@@ -1,42 +1,67 @@
 #pragma once
+#include "Building.hpp"
 #include <iostream>
+
 #include "Employee.hpp"
 #include <vector>
-class Company{
+class Company: public Building{
     private:
-    std::string CompanyName;
-    Employee* employees;
+    double CompanyValue;
     std::vector<Employee> Roster;
-    protected:
-    static int employeecount;
+    int Employeecount = 0;
+    
     public:
-    Company(std::string name){
-        this->CompanyName = name;
-        ++employeecount;
+    
+    Company(std::string name, Address* address, double compval): Building(name,address){
+       this->CompanyValue = compval;
+        ++Employeecount;
 
     }
         void addEmployee(Employee employ){
-            std::cout << employ.getId().Name <<" Added.\n";
+            std::cout << employ.Name <<" Added.\n";
             Roster.emplace_back(employ);
-            ++employeecount;
+            ++Employeecount;
+            
         }
     std::vector<Employee> getRoster(){
         return Roster;
     }       
 
-       std::string getCompanyName(){
-           return CompanyName;
-       } 
- static void employeeCounter(){
-        std::cout << "Number of Employees: " << employeecount <<"\n";
+    int getCompanyValue(){
+        return CompanyValue;
+    }
+
+    void setPayment(){
+        double SalaryToPay=((this->CompanyValue*0.25)/Roster.size());
+        if(SalaryToPay <0) SalaryToPay =0;
+        for(auto &i : Roster){
+        i.setSalary(SalaryToPay);
+    
+        }
+        
+    }
+
+  // Functions for displaying Employee info 
+
+    void display(Employee* employ){
+        std::cout << "Employee Name: " << employ->Name <<"\n"
+        << "Employee Age: "<< employ->Age <<"\n"
+        <<"Employee WID: "<< employ->ID<<"\n"
+        <<"Employee Job Title: " << employ->JobTitle <<"\n"
+        <<"Employee Salary: " << employ->getSalary()<<"\n";
+
+    }
+     
+  void employeeCounter(){
+        std::cout << "Number of Employees: " << Employeecount <<"\n";
     }
 
     
     void ShowRoster(){
         std::cout << "List of Employees: \n";
         
-        for(auto i: getRoster()){
-            i.display();
+        for(auto i: Roster){
+            this->display(&i);
             std:: cout<<"\n";
         }
     }

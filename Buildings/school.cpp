@@ -13,13 +13,17 @@ int main(){
     
 
     Student std =  Student("Jake", 25,"Cooking",3.1);
-    Student std1 = Student("Colby",18, "Diving",2.0);
+    Student std1 = Student("Colby",18, "Diving",2.2);
+    Student std2 = Student("Steve",21, "Business",3.2);
+    Student std3 = Student("Greg",32, "Marketing",4.0);
     Students.emplace_back(std);
     Students.emplace_back(std1);
-    std::cout << school.getSchoolName()<<"\n";
+    Students.emplace_back(std2);
+    Students.emplace_back(std3);
+    school.getName();
     school.getAddress();
   
-    std::cout << school1.getSchoolName()<<"\n";
+    school1.getName();
     school1.getAddress();
     
     for(auto i: Students){
@@ -28,7 +32,7 @@ int main(){
     }
     std::cout  << "\n";
     school1.ListRoster();
-
+    std1.walk.moveLoop();
 
     return 0;
 }

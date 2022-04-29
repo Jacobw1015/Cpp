@@ -24,6 +24,7 @@ public:
     void takeDamage(healthtype damage){
         Health -= damage;
         if(Health <=0){
+            Health = 0;
             std::cout <<"Game Over!";
         }
     }

@@ -1,0 +1,9 @@
+Types of spells: Damage, BURN, STUN, Heal, Buff
+All spells will have:
+  - Name
+  - Amount of mana needed
+  - Element
+  - Spell Type
+
+Spells Master
+Will have 

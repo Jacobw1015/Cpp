@@ -11,9 +11,13 @@ struct  CoreStats
 
 
     // Setters
-    void setAttack(stattype val){ Attack += val;}
-    void setSpeed(stattype val){ Speed += val;}
-    void setDefense(stattype val){ Defense += val;}
+    void increaseAttack(stattype val){ Attack += val;}
+    void increaseSpeed(stattype val){ Speed += val;}
+    void increaseDefense(stattype val){ Defense += val;}
+    
+    void decreaseAttack(stattype val){ Attack -= val;}
+    void decreaseSpeed(stattype val){ Speed -= val;}
+    void decreaseDefense(stattype val){ Defense -= val;}
 
 
 
@@ -28,6 +32,16 @@ struct  CoreStats
         this->Attack += rhs;
         this->Defense += rhs;
         this->Speed += rhs;
+        return *this;
+    }
+    CoreStats& operator-=(const stattype& rhs){
+      this->Attack -= rhs;
+      this->Defense -= rhs;
+      this->Speed -= rhs;
+      if(this->Attack <= 0){ this->Attack = 0;}
+      if(this->Defense <= 0){ this->Defense = 0;}
+      if(this->Speed <= 0){ this->Speed = 0;}
+
         return *this;
     }
 };

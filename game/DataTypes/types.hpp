@@ -5,3 +5,4 @@ typedef int healthtype;
 typedef int manatype;
 typedef int leveltype;
 typedef int currencytype;
+typedef int exptype;

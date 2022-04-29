@@ -1,10 +1,6 @@
 #include <iostream>
 #include <string>
-#include "Wizards/wizards.hpp"
-#include "DataTypes/types.hpp"
-#include "Elements/elements.hpp"
-#include "Items/Item.hpp"
-#include <conio.h>
+#include "Player/Player.hpp"
 
 
     void selectElement(std::string &choice, Elements &element){
@@ -36,7 +32,7 @@
 int main()
 {
     std::string input,choice;
-    char a;
+    std::string a;
     Elements element;
    
 
@@ -50,37 +46,24 @@ int main()
     
    // selectElement(choice, element);
 
-    Player wiz = Player("Jacob",Elements::Fire);
-   wiz.Info();
-  Potion healthPotion= Potion("Mass Heal",ITEMTYPE::POTION,100,POTIONTYPE::MANA,100);
-    std::cout << "\n" << healthPotion.getItemName() <<"\n"
-    << "Type of Item: " << healthPotion.getType() << "\n"
-    << "Type of Potion: " << healthPotion.getPotionInfo() <<"\n";
-    //Weapons
-Weapon wand = Weapon("Storm-Bringer",ITEMTYPE::WEAPON,100,WeaponType::WAND,Elements::Air,10,5,3);
-Weapon staff =  Weapon("Magmarok",ITEMTYPE::WEAPON,150,WeaponType::STAFF,wiz.getElementType(),15,8,5); 
-Weapon waterStaff = Weapon("Posiden's Rage", ITEMTYPE::WEAPON,175, WeaponType::STAFF,Elements::Water,25,10,15 );
-Weapon EarthWand = Weapon("Terra Hammer", ITEMTYPE::WEAPON,180, WeaponType::WAND,Elements::Earth,15,6,10 );
-   
-   wiz.addToItemList(wand);
-   wiz.addToItemList(staff);
-   wiz.addToItemList(waterStaff);
-   wiz.addToItemList(EarthWand);
-   
-    wiz.listWeapons();
-   wiz.WeaponsInfo();
-    wiz.equipWeapon(EarthWand);
-std::cout<<"\n";
-//Robe
-Robes test = Robes("Test",ITEMTYPE::ROBE,50,wiz.getElementType(),10,0,15);
-Robes test2 = Robes("Test2",ITEMTYPE::ROBE,90,Elements::Water,10,15);
+    Player p1 = Player("Jacob",Elements::Earth);
+    Wizard en1 = Wizard("Enemy",Elements::Air);
+    Wizard en2 = Wizard("Enemy 2",Elements::Fire);
 
-wiz.addToItemList(test);
-wiz.addToItemList(test2);
-wiz.listRobes();
-wiz.equipRobe(test2);
-wiz.Info();
-    
+    Robes en2Robe = Robes("Magma Robe",ITEMTYPE::ROBE,100,Elements::Fire,5,3);
+    en2.addToItemList(en2Robe);
+    en2.equipRobe(en2Robe);
+
+    p1.createSpell(new Spell("Earth Wave",Elements::Earth,30,SPELLTYPE::DMG));
+    en2.gainExp(5000);
+
+    p1.castSpell(en1,"Earth Wave");
+    std::cout<<"\n";
+    p1.castSpell(en2,"Earth Wave");
+    std::cout <<"\n";
+    en1.Info();    
+    std::cout <<"\n";
+    en2.Info();    
 
     return 0;
 }

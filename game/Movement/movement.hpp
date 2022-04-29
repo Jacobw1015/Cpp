@@ -1,5 +1,6 @@
+#pragma once
 #include <iostream>
-
+#include <conio.h>
 class Move{
    public:
      int m_x =0,m_y =0; 
@@ -24,6 +25,19 @@ class Move{
             }
          
            
+        }
+
+        void MoveLoop(){
+            char a;
+            while(true){
+                 a = _getch();
+                this->movePlayer(a);
+                this->getCurrentLocation();
+                if(a =='q'|| a == 'x'){ break;}
+
+            }
+
+
         }
       
     

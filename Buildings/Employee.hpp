@@ -3,38 +3,27 @@
 #include <stdlib.h>
 #include "Human.hpp"
 
-class Employee
+class Employee : public Identity
 {
-    private: 
-   Identity* Id;
-   
-  
-   
-    public:
-     
-      static int NextId; 
-      int EmployeeId; 
-      std::string JobTitle; 
-    Employee(std::string jobttl, Identity* id){
-       this->EmployeeId = ++NextId;
-        
+private:
+    double EmployeeSalary;
+
+public:
+    std::string JobTitle;
+    int ID = 0;
+
+    Employee(std::string name, int age, std::string jobttl) : Identity(name, age)
+    {
         this->JobTitle = jobttl;
-        this->Id= id;
-      
+        this->createID();
     }
-    
-    Identity getId(){
-        return *Id;
-    }
+    void createID()
+    {
+        int idnum;
 
-    void display(){
-        std::cout << "Employee Name: " << Id->Name <<"\n"
-        << "Employee Age: "<< Id->Age <<"\n"
-        <<"Employee WID: "<< this->EmployeeId <<"\n"
-        <<"Employee Job Title: " << this->JobTitle <<"\n";
-
+        idnum = rand() % 100;
+        this->ID = idnum;
     }
-   
-     Employee() = delete;
-   
+    double getSalary() { return this->EmployeeSalary; }
+    void setSalary(double amt) { this->EmployeeSalary = amt; }
 };
